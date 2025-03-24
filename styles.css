@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+ font-family: 'Dela+Gothic+One';
+ overflow-x: hidden;
+}
+
+
+html {
+  color-scheme: dark;
+}
+
+
+
+:root {
+  --main-color: #fff;
+  --fs-900: clamp(2.8rem, calc(1.85rem + 4.74vw), 5.52rem);
+  --clr-primary-400: hsl(219, 76%, 40%);
+  --clr-secondary-400: hsl(269, 75%, 40%);
+  --clr-accent-400: hsl(358, 72%, 50%);
+}
+
+
+section {
+  padding: 5%;
+}
+
+
+h2 {
+  font-size: 2.5rem;
+  line-height: 125%;
+  padding: 1rem 0rem;
+}
+
+.page-title {
+  text-shadow:
+  2px 2px 0 var(--clr-accent-400),
+  4px 4px 0 var(--clr-secondary-400),
+  6px 6px 0 var(--clr-primary-400);
+  color: white;
+  text-align: center;
+  font-size: var(--fs-900);
+  line-height: 1.05;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+h3 {
+  font-size: 1.25rem;
+  line-height: 125%;
+}
+
+
+.classes {
+  
+  text-align: center;
+  font-family: 'Dela+Gothic+One';
+}
+
+
+
+
+.videos video  {
+  width: 100%;
+  border-radius: 1rem;
+  margin-top: 1rem;
+}
+
+
+.meditation,
+.yoga,
+.pilates {
+  position: relative;
+}
+
+
+.videos h3 {
+  position: absolute;
+  color: var(--main-color);
+  text-shadow: 0px 2px 12px rgba(230, 8, 19, 0.849);
+  text-transform: uppercase;
+  bottom: 10%;
+  left: 50%;
+  transform: translate(-50%, -10%);
+  font-size: 2rem;
+}
+
+
+@media screen and (min-width: 768px) {
+  body {
+    padding: 10%;
+  }
+  .videos {
+    display: flex;
+    gap: 2rem;
+  }
+}
