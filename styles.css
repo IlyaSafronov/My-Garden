@@ -61,7 +61,7 @@ h3 {
 
 
 .classes {
-  
+  position: relative;
   text-align: center;
   font-family: 'Dela+Gothic+One';
 }
@@ -92,6 +92,35 @@ h3 {
   left: 50%;
   transform: translate(-50%, -10%);
   font-size: 1.2rem;
+}
+
+/* ! social */
+
+.social {
+  /* position: absolute; */
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.social li {
+  list-style: none;
+}
+
+.social li a {
+  display: inline-block;
+  filter: invert(1);
+  margin-right: 20px;
+  transform: scale(0.5);
+  transition: 0.5s;
+}
+
+
+.social li a:hover {
+  transform: scale(0.5) translateY(-15px);
 }
 
 
